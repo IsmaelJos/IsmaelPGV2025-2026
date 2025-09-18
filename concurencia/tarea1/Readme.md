@@ -26,6 +26,7 @@ El objetivo es afianzar la comprensión de los **procesos en sistemas operativos
 
     El programa es un código guardado en un disco duro para una fase previa del proceso. El proceso es un evento de ese programa en ejecución.
     --www.profesionalreview.com--
+    
 
 2. Explica qué es el **kernel** y su papel en la gestión de procesos.  
 3. ¿Qué son **PID** y **PPID**? Explica con un ejemplo.  
