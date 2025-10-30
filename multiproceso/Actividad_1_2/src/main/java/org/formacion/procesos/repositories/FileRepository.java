@@ -27,8 +27,9 @@ public class FileRepository implements CrudInterface{
         if (fileName == null) {
             fileName = "mis_procesos.txt";
         }
-        URL resource = getClass().getClassLoader().getResource(fileName);
-        path = Paths.get(resource.getPath());
+        //URL resource = getClass().getClassLoader().getResource(fileName);
+        //path = Paths.get(resource.getPath());
+        path = Paths.get("src/main/resources/mis_procesos.txt");
     }
 
     @Override

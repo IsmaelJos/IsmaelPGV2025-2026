@@ -17,12 +17,11 @@ public class RunnerController {
 
     public void menuConsola() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("=== Lanzador de Procesos (CLI) Linux/Windows ===\n" +
+        System.out.println("=== Lanzador de Procesos (CLI) Linux ===\n" +
                 "Comandos:\n" +
-                "  run PING host=8.8.8.8 count=4 timeoutMs=15000\n" +
-                "  run LIST_DIR path=.\n" +
-                "  run HASH_SHA256 file=README.md\n" +
-                "  help | os | exit\n");
+                "  lsof -i\n" +
+                "  top\n" +
+                "  ps aux | head \n" );
           String linea = scanner.nextLine();  
 
           if (linea.toUpperCase().startsWith("PS")) {
@@ -30,15 +29,7 @@ public class RunnerController {
           }else{
             ComandoControllerLs.procesarLinea(linea);
           }
-          //scanner.close();
-    }
-
-    private void helpConsola() {
-        System.out.println(
-                "Ejemplos\n" +
-                        "run PING host=8.8.8.8 count=4\n" +
-                        "run LIST_DIR path=.\n" +
-                        "run HASH_SHA256 file=README.md timeoutMs=5000\n");
+          scanner.close();
     }
 
 }

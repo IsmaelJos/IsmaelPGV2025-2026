@@ -1,9 +1,0 @@
-total 28
-drwxr-xr-x 4 dam dam 4096 oct 28 18:36 .
-drwxrwxr-x 5 dam dam 4096 oct 28 17:17 ..
--rw-r--r-- 1 dam dam   37 sep 30 15:13 .gitignore
--rw-rw-r-- 1 dam dam    0 oct 28 18:36 mis_procesos.txt
--rw-r--r-- 1 dam dam 2085 oct 23 16:53 pom.xml
--rw-r--r-- 1 dam dam 1490 oct  7 15:32 README.md
-drwxr-xr-x 4 dam dam 4096 sep 30 16:13 src
-drwxrwxr-x 7 dam dam 4096 oct 28 18:36 target
