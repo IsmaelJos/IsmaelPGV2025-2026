@@ -2,8 +2,9 @@ package org.formacion.procesos.controllers;
 
 import java.util.Scanner;
 
-import org.formacion.procesos.services.ComandoLsService;
+import org.formacion.procesos.services.ComandoLsofService;
 import org.formacion.procesos.services.ComandoPsService;
+import org.formacion.procesos.services.ComandoTopService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,9 @@ public class RunnerController {
     @Autowired
     ComandoPsService ComandoControllerPs;
     @Autowired
-    ComandoLsService ComandoControllerLs;
+    ComandoTopService ComandoControllerTop;
+    @Autowired
+    ComandoLsofService ComandoControllerLsof;
 
     public void menuConsola() {
         Scanner scanner = new Scanner(System.in);
@@ -26,8 +29,10 @@ public class RunnerController {
 
           if (linea.toUpperCase().startsWith("PS")) {
             ComandoControllerPs.procesarLinea(linea);
+          }else if(linea.toUpperCase().startsWith("LSOF")){
+            ComandoControllerLsof.procesarLinea(linea);
           }else{
-            ComandoControllerLs.procesarLinea(linea);
+            ComandoControllerTop.procesarLinea(linea);
           }
           scanner.close();
     }

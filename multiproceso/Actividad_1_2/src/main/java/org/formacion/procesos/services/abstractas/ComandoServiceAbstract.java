@@ -88,9 +88,12 @@ public abstract class ComandoServiceAbstract {
         if (!validarComando()) {
             return false;
         }
+        //String parametro = arrayComando[1];
         String parametro = arrayComando[1];
+        for (int i = 2; i <= arrayComando.length; i++) {
+            parametro.concat(" "+arrayComando[i]) ;
+        }
 
-        
         Pattern pattern = Pattern.compile(exprecionRegular);
         Matcher matcher = pattern.matcher(parametro);
         if (!matcher.find()){

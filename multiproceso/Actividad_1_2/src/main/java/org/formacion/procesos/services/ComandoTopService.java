@@ -6,11 +6,11 @@ import org.formacion.procesos.services.abstractas.ComandoServiceAbstract;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ComandoLsService extends ComandoServiceAbstract{
+public class ComandoTopService extends ComandoServiceAbstract{
 
-    public ComandoLsService(){
-        this.setTipo(ProcessType.LS);
-        this.setExprecionRegular("^((-(la|l|a))|\s*)$");    }
+    public ComandoTopService(){
+        this.setTipo(ProcessType.TOP);
+        this.setExprecionRegular("^(-b\s-n1)$");    }
 
 
 }
