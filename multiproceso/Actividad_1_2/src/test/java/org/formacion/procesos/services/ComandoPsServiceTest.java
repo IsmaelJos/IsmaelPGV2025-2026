@@ -16,7 +16,7 @@ public class ComandoPsServiceTest {
 
     @Test
     void validarLaTest(){
-        String[] arrayComando = {"ps","-xa"};
+        String[] arrayComando = {"ps","aux | head"};
         boolean valida = comandoPsService.validar(arrayComando);
         Assertions.assertTrue(valida,"se ha producido un error en la validacion");
     }
@@ -30,6 +30,12 @@ public class ComandoPsServiceTest {
     @Test
     void validarFalse2Test(){
         String[] arrayComando = {"ps","-j"};
+        boolean valida = comandoPsService.validar(arrayComando);
+        Assertions.assertFalse(valida,"se ha producido un error en la validacion");
+    }
+    @Test
+    void validarFalse3Test(){
+        String[] arrayComando = {"ps","-xa"};
         boolean valida = comandoPsService.validar(arrayComando);
         Assertions.assertFalse(valida,"se ha producido un error en la validacion");
     }

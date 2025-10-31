@@ -90,9 +90,10 @@ public abstract class ComandoServiceAbstract {
         }
         //String parametro = arrayComando[1];
         String parametro = arrayComando[1];
-        for (int i = 2; i <= arrayComando.length; i++) {
-            parametro.concat(" "+arrayComando[i]) ;
+        for (int i = 2; i < arrayComando.length; i++) {
+            parametro = parametro+(" "+arrayComando[i]) ;
         }
+        //System.out.println(parametro);
 
         Pattern pattern = Pattern.compile(exprecionRegular);
         Matcher matcher = pattern.matcher(parametro);
