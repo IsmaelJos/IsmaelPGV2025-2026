@@ -16,7 +16,12 @@ public class BatallaPokemonTest {
         System.setOut(new PrintStream(outContent));
 
         BatallaPokemon juego = new BatallaPokemon();
-        juego.main(null);
+        Thread t1 = new Thread(juego.new HiloCharmander());
+        Thread t2 = new Thread(juego.new HiloPikachu());
+        t1.start();
+        t2.start();
+        t1.join();
+        t2.join();
         String output = outContent.toString();
         assertTrue(output.contains("ha ganado la batalla!"));
         assertTrue(juego.juegoTerminado.get());
