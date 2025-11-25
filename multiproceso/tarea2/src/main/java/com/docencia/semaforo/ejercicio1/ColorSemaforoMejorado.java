@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import com.docencia.semaforo.abstractas.SimulacionBase;
 
 /**
- * @author eduglezexp
+ * @author 
  * @version 1.0.0
  */
 

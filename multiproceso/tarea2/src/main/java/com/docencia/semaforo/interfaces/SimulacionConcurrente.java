@@ -1,7 +1,7 @@
 package com.docencia.semaforo.interfaces;
 
 /**
- * @author eduglezexp
+ * @author 
  * @version 1.0.0
  */
 

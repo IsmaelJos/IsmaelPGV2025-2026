@@ -3,7 +3,7 @@ package com.docencia.semaforo.ejercicio1;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * @author eduglezexp
+ * @author 
  * @version 1.0.0
  */
 

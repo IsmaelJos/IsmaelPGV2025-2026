@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * @author eduglezexp
+ * @author 
  * @version 1.0.0
  */
 

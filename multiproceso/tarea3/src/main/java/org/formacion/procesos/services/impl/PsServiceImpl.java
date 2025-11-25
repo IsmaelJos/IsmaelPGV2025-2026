@@ -5,7 +5,7 @@ import org.formacion.procesos.services.abstractas.ComandoServiceAbstract;
 import org.springframework.stereotype.Component;
 
 /**
- * @author eduglezexp
+ * @author 
  * @version 1.0.0
  */
 
