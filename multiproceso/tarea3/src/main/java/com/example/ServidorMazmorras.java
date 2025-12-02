@@ -1,4 +1,4 @@
-package com.example.ejercicio1;
+package com.example;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
