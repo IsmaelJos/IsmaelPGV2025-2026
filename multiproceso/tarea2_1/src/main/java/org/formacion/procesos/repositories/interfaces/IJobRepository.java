@@ -3,7 +3,7 @@ package org.formacion.procesos.repositories.interfaces;
 import java.nio.file.Path;
 
 /**
- * @author eduglezexp
+ * @author 
  * @version 1.0.0
  */
 

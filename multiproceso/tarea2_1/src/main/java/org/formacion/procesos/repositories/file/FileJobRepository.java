@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 /**
- * @author eduglezexp
+ * @author 
  * @version 1.0.0
  */
 

@@ -16,7 +16,7 @@ import org.formacion.procesos.repositories.interfaces.IJobRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * @author eduglezexp
+ * @author 
  * @version 1.0.0
  */
 

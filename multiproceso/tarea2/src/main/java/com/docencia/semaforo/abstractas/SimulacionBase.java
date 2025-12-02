@@ -4,7 +4,7 @@ import com.docencia.semaforo.interfaces.SimulacionConcurrente;
 import com.docencia.semaforo.utils.ThreadUtils;
 
 /**
- * @author eduglezexp
+ * @author 
  * @version 1.0.0
  */
 

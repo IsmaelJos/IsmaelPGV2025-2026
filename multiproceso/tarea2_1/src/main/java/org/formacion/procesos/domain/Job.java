@@ -1,7 +1,7 @@
 package org.formacion.procesos.domain;
 
 /**
- * @author eduglezexp
+ * @author 
  * @version 1.0.0
  */
 
